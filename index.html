@@ -93,6 +93,25 @@
             margin-bottom: 40px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
+        .roadmap {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .roadmap-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .roadmap-item:hover {
+            transform: translateY(-5px);
+        }
+        .roadmap-item h3 {
+            margin-top: 0;
+            color: #6a11cb;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -137,10 +156,32 @@
         <p>Telegram: <a href="https://t.me/perpetuall" target="_blank" style="color:white;">@perpetuall</a></p>
     </section>
 
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <h2>Roadmap</h2>
+        <div class="roadmap">
+            <div class="roadmap-item">
+                <h3>Q3 2025 – Lançamento MVP</h3>
+                <p>Lançamento do MVP do app PerpetuALL, com recursos essenciais e o site oficial no ar para atrair os primeiros usuários.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Q4 2025 – Testes PLC</h3>
+                <p>Testes iniciais da PerpetuALL Coin (PLC), parcerias comerciais e primeiras recompensas distribuídas para usuários beta.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Q1 2026 – DEX e Integração</h3>
+                <p>Listagem da PLC em exchanges descentralizadas e integração completa com o app para uso real em transações.</p>
+            </div>
+            <div class="roadmap-item">
+                <h3>Q2 2026 – Expansão Global</h3>
+                <p>Expansão internacional, novas funcionalidades com tecnologia blockchain e fortalecimento de parcerias globais.</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
         &copy; 2025 PerpetuALL. Todos os direitos reservados.
     </footer>
 
 </body>
 </html>
-
