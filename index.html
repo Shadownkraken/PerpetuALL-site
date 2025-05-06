@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PerpetuALL Coin (PLC) - Revolucionando Relacionamentos</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PerpetuALL – Restaurando Laços</title>
     <style>
         body, html {
             margin: 0;
@@ -11,14 +11,20 @@
             font-family: Arial, sans-serif;
             scroll-behavior: smooth;
             color: white;
-            background: black;
+            background: linear-gradient(135deg, #ff0080, #7928ca, #2f80ed);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
         }
-        /* Navbar */
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
         .navbar {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, 0.6);
             display: flex;
             justify-content: center;
             padding: 15px 0;
@@ -34,57 +40,27 @@
             transition: color 0.3s;
         }
         .navbar a:hover {
-            color: #6a11cb;
+            color: #ff69b4;
         }
-        /* Hero */
         .hero {
-            position: relative;
-            height: 100vh;
-            background: url('logo.png') no-repeat center center/cover;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0, 0, 0, 0.65);
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
             padding: 0 20px;
         }
         .hero-content h1 {
-            font-size: 65px;
+            font-size: 60px;
             margin: 0;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
         }
         .hero-content p {
             font-size: 24px;
             max-width: 700px;
             margin: 20px auto;
-            text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
+            text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
         }
-        .hero-content a.button {
-            display: inline-block;
-            padding: 15px 35px;
-            margin-top: 30px;
-            font-size: 20px;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .hero-content a.button:hover {
-            transform: scale(1.08);
-            box-shadow: 0 0 25px rgba(106, 17, 203, 0.9);
-        }
-        /* Section */
         section {
             padding: 80px 20px;
             max-width: 1000px;
@@ -94,45 +70,41 @@
             text-align: center;
             font-size: 36px;
             margin-bottom: 30px;
-            color: #6a11cb;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+            color: #ffe4f2;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
         }
-        section p, section ul, section li {
-            text-align: justify;
+        section p, ul {
             font-size: 18px;
             line-height: 1.7;
+            text-align: justify;
         }
-        .tokenomics {
-            background: rgba(255, 255, 255, 0.08);
+        .module {
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 40px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        }
-        .roadmap {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
         }
         .roadmap-item {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
             transition: transform 0.3s;
         }
         .roadmap-item:hover {
             transform: translateY(-5px);
         }
         .roadmap-item h3 {
+            color: #ffd1dc;
             margin-top: 0;
-            color: #6a11cb;
         }
         footer {
             text-align: center;
             padding: 20px;
             font-size: 14px;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.6);
         }
     </style>
 </head>
@@ -140,60 +112,74 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <a href="#plc">PLC</a>
+        <a href="#sobre">Projeto</a>
     </div>
 
     <!-- Hero Section -->
     <div class="hero">
         <div class="hero-content">
             <h1>PerpetuALL 🚀</h1>
-            <p>Restaurando relações, fortalecendo laços e recompensando o amor. Prepare-se para o futuro das conexões emocionais com a PerpetuALL Coin (PLC).</p>
-            <a href="#plc" class="button">Conheça a PLC</a>
+            <p>Restaurando relações, fortalecendo laços e ajudando casais a viverem seu melhor. Um ecossistema completo para o amor e a vida a dois.</p>
         </div>
     </div>
 
-    <!-- PLC Section -->
-    <section id="plc">
-        <h2>PerpetuALL Coin (PLC)</h2>
-        <p>A PerpetuALL Coin (PLC) é a primeira moeda digital pensada para fortalecer relacionamentos, restaurar casamentos e criar uma economia colaborativa entre casais e parceiros comerciais. Nossa missão é melhorar a qualidade das relações, premiando momentos especiais e transformando emoções em valor real.</p>
-        
-        <div class="tokenomics">
-            <h3 style="text-align:center;">Tokenomics</h3>
-            <p><strong>Total Supply:</strong> 100.000.000 PLC</p>
-            <ul>
-                <li>40% - Recompensas para usuários</li>
-                <li>20% - Time e desenvolvimento</li>
-                <li>20% - Marketing e parcerias</li>
-                <li>10% - Liquidez</li>
-                <li>10% - Reserva estratégica</li>
-            </ul>
-        </div>
-
-        <p>Quer saber mais ou entrar em contato com a nossa equipe?</p>
-        <p>Email: <a href="mailto:contato@perpetuall.com.br" style="color:white;">contato@perpetuall.com.br</a></p>
-        <p>Telegram: <a href="https://t.me/perpetuall" target="_blank" style="color:white;">@perpetuall</a></p>
+    <!-- Sobre o Projeto -->
+    <section id="sobre">
+        <h2>O Projeto PerpetuALL</h2>
+        <p>PerpetuALL é mais do que uma plataforma; é uma missão. Nosso objetivo é ajudar casais a restaurarem seus casamentos, fortalecerem suas relações e criarem memórias duradouras. Unimos tecnologia e sensibilidade para oferecer recursos práticos que transformam vidas: diários emocionais, testes de compatibilidade, aconselhamentos interativos e muito mais.</p>
+        <p>Com uma abordagem centrada no amor, ajudamos a prevenir separações, resgatar relacionamentos em crise e manter os laços sempre fortalecidos. Tudo isso por meio de ferramentas modernas e gamificadas, criando uma experiência única e envolvente para todos os usuários.</p>
     </section>
 
-    <!-- Roadmap Section -->
-    <section id="roadmap">
+    <!-- Funcionalidades -->
+    <section>
+        <h2>Funcionalidades</h2>
+        <div class="module">
+            <h3>❤️ Diário Emocional</h3>
+            <p>Um espaço seguro para registrar sentimentos diários, permitindo reflexões profundas sobre a jornada a dois.</p>
+        </div>
+        <div class="module">
+            <h3>🔗 Testes & Compatibilidade</h3>
+            <p>Ferramentas inteligentes para avaliar compatibilidade, linguagem do amor e ajudar a alinhar objetivos do casal.</p>
+        </div>
+        <div class="module">
+            <h3>💬 Aconselhamento e Recursos</h3>
+            <p>Acesso a conteúdos exclusivos e dicas para aprimorar a relação, além de espaço para buscar ajuda especializada.</p>
+        </div>
+    </section>
+
+    <!-- Módulo PLC -->
+    <section>
+        <h2>Módulo PerpetuALL Coin (PLC)</h2>
+        <p>A PerpetuALL Coin (PLC) é um módulo adicional do ecossistema, pensado para gamificar as experiências e recompensar os usuários. Por meio de PLCs, os casais acumulam pontos e podem trocar por benefícios, produtos e experiências, incentivando ainda mais o crescimento e cuidado mútuo.</p>
+    </section>
+
+    <!-- Roadmap -->
+    <section>
         <h2>Roadmap</h2>
-        <div class="roadmap">
-            <div class="roadmap-item">
-                <h3>🚀 Q3 2025 – Lançamento MVP</h3>
-                <p>Lançamento do MVP do app PerpetuALL, com recursos essenciais e o site oficial no ar para atrair os primeiros usuários.</p>
-            </div>
-            <div class="roadmap-item">
-                <h3>🛠 Q4 2025 – Testes PLC</h3>
-                <p>Testes iniciais da PerpetuALL Coin (PLC), parcerias comerciais e primeiras recompensas distribuídas para usuários beta.</p>
-            </div>
-            <div class="roadmap-item">
-                <h3>🌐 Q1 2026 – DEX e Integração</h3>
-                <p>Listagem da PLC em exchanges descentralizadas e integração completa com o app para uso real em transações.</p>
-            </div>
-            <div class="roadmap-item">
-                <h3>🌎 Q2 2026 – Expansão Global</h3>
-                <p>Expansão internacional, novas funcionalidades com tecnologia blockchain e fortalecimento de parcerias globais.</p>
-            </div>
+        <div class="roadmap-item">
+            <h3>🚀 Q3 2025 – Lançamento MVP</h3>
+            <p>Primeira versão da plataforma com diários, testes e recursos iniciais no ar.</p>
+        </div>
+        <div class="roadmap-item">
+            <h3>🛠 Q4 2025 – Integração PLC</h3>
+            <p>Início da gamificação, recompensas PLC e parcerias comerciais.</p>
+        </div>
+        <div class="roadmap-item">
+            <h3>🌐 Q1 2026 – Expansão & Comunidade</h3>
+            <p>Novas funcionalidades, rede social para casais e expansão global da comunidade.</p>
+        </div>
+    </section>
+
+    <!-- Time -->
+    <section>
+        <h2>Nosso Time</h2>
+        <div class="module">
+            <h3>🧠 SkullKraken</h3>
+            <p>Fundador & CEO – Visionário por trás da PerpetuALL, conectando tecnologia e relacionamentos.</p>
+        </div>
+        <div class="module">
+            <h3>💡 Mari</h3>
+            <p>Co-Fundadora & Consultora Criativa – Focada em experiências reais e estratégias para casais.</p>
         </div>
     </section>
 
