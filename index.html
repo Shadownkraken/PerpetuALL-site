@@ -34,14 +34,11 @@
             font-size: 32px;
             margin-bottom: 20px;
         }
-        .roadmap, .tokenomics {
+        .tokenomics {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 30px;
-        }
-        .roadmap-item {
-            margin-bottom: 15px;
         }
         footer {
             text-align: center;
@@ -52,6 +49,53 @@
         a {
             color: #fff;
             text-decoration: underline;
+        }
+
+        /* Timeline Roadmap */
+        .timeline {
+            position: relative;
+            margin: 50px 0;
+            padding: 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #fff;
+            opacity: 0.3;
+        }
+        .timeline-item {
+            position: relative;
+            margin-left: 60px;
+            margin-bottom: 40px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -40px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .timeline-date {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .timeline-content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .timeline-content h3 {
+            margin-top: 0;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -67,19 +111,37 @@
         <p>A PerpetuALL Coin (PLC) é a primeira moeda digital pensada para fortalecer relacionamentos, premiar momentos especiais e criar uma economia colaborativa entre casais e parceiros comerciais. Nosso objetivo é revolucionar a forma como experiências e sentimentos são valorizados.</p>
     </section>
 
-    <section class="roadmap">
+    <section>
         <h2>Roadmap</h2>
-        <div class="roadmap-item">
-            <strong>Q3 2025:</strong> Lançamento do MVP do app PerpetuALL + Site Oficial.
-        </div>
-        <div class="roadmap-item">
-            <strong>Q4 2025:</strong> Testes iniciais da PLC + Parceiros comerciais beta.
-        </div>
-        <div class="roadmap-item">
-            <strong>Q1 2026:</strong> Listagem em DEX + Integração na plataforma.
-        </div>
-        <div class="roadmap-item">
-            <strong>Q2 2026:</strong> Expansão global e novas funcionalidades blockchain.
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">Q3 2025</div>
+                <div class="timeline-content">
+                    <h3>Lançamento MVP</h3>
+                    <p>Lançamento do MVP do app PerpetuALL + Site oficial no ar.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Q4 2025</div>
+                <div class="timeline-content">
+                    <h3>Testes PLC</h3>
+                    <p>Testes iniciais da PerpetuALL Coin (PLC) e primeiros parceiros comerciais.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Q1 2026</div>
+                <div class="timeline-content">
+                    <h3>DEX e Integração</h3>
+                    <p>Listagem em exchanges descentralizadas e integração full no app.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Q2 2026</div>
+                <div class="timeline-content">
+                    <h3>Expansão Global</h3>
+                    <p>Parcerias internacionais e novas funcionalidades blockchain.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -105,15 +167,15 @@
 
     <section>
         <h2>Perguntas Frequentes (FAQ)</h2>
-        <div class="roadmap-item">
+        <div class="timeline-content">
             <strong>O que é a PerpetuALL Coin (PLC)?</strong>
             <p>É a moeda digital que integra o ecossistema PerpetuALL, premiando ações e experiências de casais.</p>
         </div>
-        <div class="roadmap-item">
+        <div class="timeline-content">
             <strong>Como posso ganhar PLC?</strong>
             <p>Participando das atividades e desafios do app, além de interagir com parceiros comerciais.</p>
         </div>
-        <div class="roadmap-item">
+        <div class="timeline-content">
             <strong>A PLC é uma criptomoeda real?</strong>
             <p>Sim! Estamos trabalhando para que seja integrada em exchanges descentralizadas e possa ser usada amplamente.</p>
         </div>
@@ -121,11 +183,11 @@
 
     <section>
         <h2>Nosso Time</h2>
-        <div class="roadmap-item">
-            <strong>Luiz Tecnologia</strong>
+        <div class="timeline-content">
+            <strong>SkullKraken</strong>
             <p>Fundador & CEO – Visionário por trás da PerpetuALL, conectando tecnologia e relacionamentos.</p>
         </div>
-        <div class="roadmap-item">
+        <div class="timeline-content">
             <strong>Mari</strong>
             <p>Consultora Criativa – Focada em experiências reais e estratégias para casais.</p>
         </div>
