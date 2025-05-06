@@ -36,9 +36,10 @@
         }
         .tokenomics {
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
         footer {
             text-align: center;
@@ -60,42 +61,51 @@
         .timeline::before {
             content: '';
             position: absolute;
-            left: 20px;
+            left: 25px;
             top: 0;
             bottom: 0;
             width: 4px;
-            background: #fff;
-            opacity: 0.3;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 2px;
         }
         .timeline-item {
             position: relative;
-            margin-left: 60px;
-            margin-bottom: 40px;
+            margin-left: 70px;
+            margin-bottom: 50px;
         }
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -40px;
+            left: -45px;
             top: 5px;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             background: linear-gradient(135deg, #6a11cb, #2575fc);
             border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            box-shadow: 0 0 15px rgba(106, 17, 203, 0.8);
         }
         .timeline-date {
             font-weight: bold;
             color: #fff;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            font-size: 18px;
         }
         .timeline-content {
             background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 8px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
         .timeline-content h3 {
             margin-top: 0;
-            font-size: 20px;
+            font-size: 22px;
+        }
+        .faq-item, .team-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
     </style>
 </head>
@@ -167,15 +177,15 @@
 
     <section>
         <h2>Perguntas Frequentes (FAQ)</h2>
-        <div class="timeline-content">
+        <div class="faq-item">
             <strong>O que é a PerpetuALL Coin (PLC)?</strong>
             <p>É a moeda digital que integra o ecossistema PerpetuALL, premiando ações e experiências de casais.</p>
         </div>
-        <div class="timeline-content">
+        <div class="faq-item">
             <strong>Como posso ganhar PLC?</strong>
             <p>Participando das atividades e desafios do app, além de interagir com parceiros comerciais.</p>
         </div>
-        <div class="timeline-content">
+        <div class="faq-item">
             <strong>A PLC é uma criptomoeda real?</strong>
             <p>Sim! Estamos trabalhando para que seja integrada em exchanges descentralizadas e possa ser usada amplamente.</p>
         </div>
@@ -183,11 +193,11 @@
 
     <section>
         <h2>Nosso Time</h2>
-        <div class="timeline-content">
-            <strong>SkullKraken</strong>
+        <div class="team-item">
+            <strong>Luiz Tecnologia</strong>
             <p>Fundador & CEO – Visionário por trás da PerpetuALL, conectando tecnologia e relacionamentos.</p>
         </div>
-        <div class="timeline-content">
+        <div class="team-item">
             <strong>Mari</strong>
             <p>Consultora Criativa – Focada em experiências reais e estratégias para casais.</p>
         </div>
