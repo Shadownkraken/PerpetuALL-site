@@ -1,205 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>PerpetuALL – Restaurando Laços</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            scroll-behavior: smooth;
-            color: white;
-            background: linear-gradient(135deg, #ff0080, #7928ca, #2f80ed);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-        }
-        @keyframes gradientBG {
-            0% {background-position: 0% 50%;}
-            50% {background-position: 100% 50%;}
-            100% {background-position: 0% 50%;}
-        }
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            display: flex;
-            justify-content: center;
-            padding: 15px 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.8);
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-        .navbar a:hover {
-            color: #ff69b4;
-        }
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-        .hero-content h1 {
-            font-size: 60px;
-            margin: 0;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
-        }
-        .hero-content p {
-            font-size: 24px;
-            max-width: 700px;
-            margin: 20px auto;
-            text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
-        }
-        section {
-            padding: 80px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        section h2 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 30px;
-            color: #ffe4f2;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
-        }
-        section p, ul {
-            font-size: 18px;
-            line-height: 1.7;
-            text-align: justify;
-        }
-        .module {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 40px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-        }
-        .roadmap-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.4);
-            transition: transform 0.3s;
-        }
-        .roadmap-item:hover {
-            transform: translateY(-5px);
-        }
-        .roadmap-item h3 {
-            color: #ffd1dc;
-            margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            background: rgba(0, 0, 0, 0.6);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PerpetuALL – Fortalecendo Laços</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #833ab4, #3b5998, #fd1d1d);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 300;
+    }
+    section {
+      padding: 100px 20px 60px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    .module {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: linear-gradient(135deg, #fd1d1d, #833ab4, #3b5998);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 300;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <a href="#sobre">Projeto</a>
+  <header>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>PerpetuALL – Fortalecendo Laços, Transformando Relacionamentos</h2>
+    <p style="text-align:center; max-width:700px; margin: 0 auto;">Uma plataforma inovadora para casais que desejam aprofundar sua conexão e celebrar cada momento juntos.</p>
+    <div style="text-align:center;">
+      <a href="#sobre" class="cta-button">Saiba mais</a>
     </div>
-
-    <!-- Hero Section -->
-    <div class="hero">
-        <div class="hero-content">
-            <h1>PerpetuALL 🚀</h1>
-            <p>Restaurando relações, fortalecendo laços e ajudando casais a viverem seu melhor. Um ecossistema completo para o amor e a vida a dois.</p>
-        </div>
-    </div>
-
-    <!-- Sobre o Projeto -->
-    <section id="sobre">
-        <h2>O Projeto PerpetuALL</h2>
-        <p>PerpetuALL é uma missão focada em restaurar casamentos e fortalecer relações, promovendo bem-estar emocional e conexão genuína. Acreditamos que relacionamentos saudáveis são a base de uma sociedade forte, por isso criamos uma plataforma que oferece recursos práticos e gamificados para ajudar casais a resgatar e nutrir seus vínculos de forma contínua.</p>
-    </section>
-
-    <!-- O Aplicativo -->
-    <section>
-        <h2>O Aplicativo PerpetuALL</h2>
-        <div class="module">
-            <h3>📱 Nome do Aplicativo</h3>
-            <p><strong>PerpetuALL</strong></p>
-        </div>
-        <div class="module">
-            <h3>🎯 Objetivo</h3>
-            <p>Criar um ambiente exclusivo para casais, onde cada parceiro interage apenas com seu cônjuge. O app incentiva a intimidade, recompensando momentos especiais com pontos (coins), que podem ser trocados por prêmios ou benefícios dentro da plataforma.</p>
-        </div>
-        <div class="module">
-            <h3>✨ Funcionalidades Principais</h3>
-            <ul>
-                <li><strong>Cadastro e Autenticação:</strong> Cadastro individual com convite do parceiro para vincular a conta (evita interações externas) e verificação dupla para garantir conexões genuínas.</li>
-                <li><strong>Sistema de Pontuação (Coins):</strong> Registro de momentos íntimos, com confirmação do parceiro para validar a pontuação. Baseado em frequência e desafios.</li>
-                <li><strong>Loja de Benefícios:</strong> Troque coins por jantares românticos, presentes personalizados, viagens e outros benefícios.</li>
-                <li><strong>Histórico e Estatísticas:</strong> Progresso e histórico das interações, com médias mensais e streaks de dias consecutivos.</li>
-                <li><strong>Gamificação e Conquistas:</strong> Missões, badges e prêmios privados para motivar interações saudáveis.</li>
-                <li><strong>Segurança e Privacidade:</strong> Dados privados acessíveis apenas pelo casal, com opção de apagar registros antigos. Nenhuma info pública.</li>
-            </ul>
-        </div>
-        <div class="module">
-            <h3>💰 Monetização (Opcional)</h3>
-            <ul>
-                <li>Assinatura premium com recompensas exclusivas.</li>
-                <li>Parcerias com marcas (flores, jantares, viagens).</li>
-                <li>Versão gratuita com anúncios discretos.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Módulo PLC -->
-    <section>
-        <h2>Módulo PerpetuALL Coin (PLC)</h2>
-        <p>A PerpetuALL Coin (PLC) é um módulo adicional, pensado para gamificar as experiências e recompensar os usuários. Os casais acumulam pontos que podem ser trocados por benefícios, incentivando crescimento e cuidado mútuo.</p>
-    </section>
-
-    <!-- Roadmap -->
-    <section>
-        <h2>Roadmap</h2>
-        <div class="roadmap-item">
-            <h3>🚀 Q3 2025 – Lançamento MVP</h3>
-            <p>Primeira versão da plataforma com recursos essenciais e lançamento inicial.</p>
-        </div>
-        <div class="roadmap-item">
-            <h3>🛠 Q4 2025 – Integração PLC</h3>
-            <p>Gamificação com recompensas e primeiras parcerias comerciais.</p>
-        </div>
-        <div class="roadmap-item">
-            <h3>🌐 Q1 2026 – Expansão & Comunidade</h3>
-            <p>Novas funcionalidades, rede social exclusiva e expansão global.</p>
-        </div>
-    </section>
-
-    <!-- Time -->
-    <section>
-        <h2>Nosso Time</h2>
-        <div class="module">
-            <h3>🧠 SkullKraken</h3>
-            <p>Fundador & CEO – Visionário por trás da PerpetuALL, conectando tecnologia e relacionamentos.</p>
-        </div>
-        <div class="module">
-            <h3>💡 Mari</h3>
-            <p>Co-Fundadora & Consultora Criativa – Focada em experiências reais e estratégias para casais.</p>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2025 PerpetuALL. Todos os direitos reservados.
-    </footer>
+  </section>
 
 </body>
 </html>
