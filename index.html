@@ -14,11 +14,19 @@
       animation: gradientBG 15s ease infinite;
       color: white;
     }
+
     @keyframes gradientBG {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
     header {
       position: fixed;
       top: 0;
@@ -29,28 +37,33 @@
       padding: 20px;
       z-index: 999;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: 300;
     }
+
     section {
-      padding: 100px 20px 60px;
+      padding: 120px 20px 80px;
       max-width: 960px;
       margin: 0 auto;
       text-align: center;
     }
+
     h2 {
-      font-size: 48px;
+      font-size: 38px;
       margin: 10px 0 10px;
       font-weight: 300;
     }
+
     .subtitle {
       font-size: 18px;
-      margin: 10px auto 20px;
+      margin: 15px auto 20px;
       max-width: 720px;
     }
+
     .cta-button {
       display: inline-block;
       margin-top: 30px;
@@ -61,9 +74,11 @@
       border-radius: 30px;
       font-weight: 300;
     }
-    img.infinito_logo_perpetuall {
-      width: 10px;
-      margin-bottom: 5px;
+
+    img.logo {
+      width: 150px;
+      margin-bottom: 15px;
+      animation: pulse 4s ease-in-out infinite;
     }
   </style>
 </head>
