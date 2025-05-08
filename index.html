@@ -13,6 +13,12 @@
       background-size: 400% 400%;
       animation: gradientBG 15s ease infinite;
       color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 0 20px;
     }
 
     @keyframes gradientBG {
@@ -27,82 +33,56 @@
       100% { transform: scale(1); opacity: 1; }
     }
 
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-      z-index: 999;
+    .hero {
+      max-width: 700px;
+      padding-top: 60px;
     }
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 300;
-    }
-
-    section {
-      padding: 120px 20px 80px;
-      max-width: 960px;
-      margin: 0 auto;
-      text-align: center;
+    img.logo {
+      width: 160px;
+      margin-bottom: 10px; /* Mais próximo de PerpetuALL */
+      animation: pulse 4s ease-in-out infinite;
     }
 
     h2 {
-      font-size: 38px;
-      margin: 5px 0 10px;
+      font-size: 42px;
       font-weight: 300;
+      margin: 0 0 10px;
     }
 
     .subtitle {
       font-size: 18px;
-      margin: 15px auto 20px;
-      max-width: 720px;
+      margin: 0 auto 25px;
+      max-width: 600px;
+      line-height: 1.6;
     }
 
     .cta-button {
       display: inline-block;
-      margin-top: 30px;
+      margin-top: 20px;
       padding: 12px 30px;
       background: linear-gradient(135deg, #fd1d1d, #833ab4, #3b5998);
       color: white;
       text-decoration: none;
       border-radius: 30px;
       font-weight: 300;
-    }
-
-    img.logo {
-      width: 180px;
-      margin-bottom: 0px; /* ajustado aqui */
-      animation: pulse 4s ease-in-out infinite;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#funcionalidades">Funcionalidades</a>
-      <a href="#beneficios">Benefícios</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#equipe">Equipe</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-
-  <section id="inicio">
+  <div class="hero">
     <img src="infinito_logo_perpetuall.png" alt="Logo Infinito" class="logo" />
     <h2>PerpetuALL</h2>
-    <p class="subtitle"><strong>Fortalecendo Laços, Transformando Relacionamentos</strong><br>
-    Uma plataforma inovadora para casais que desejam aprofundar sua conexão e celebrar cada momento juntos.</p>
+    <p class="subtitle">
+      <strong>Fortalecendo Laços, Transformando Relacionamentos</strong><br>
+      Uma plataforma inovadora para casais que desejam aprofundar sua conexão<br>
+      e celebrar cada momento juntos.
+    </p>
     <a href="#sobre" class="cta-button">Saiba mais</a>
-  </section>
+  </div>
 
 </body>
 </html>
