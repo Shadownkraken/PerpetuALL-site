@@ -13,10 +13,6 @@
       background-size: 400% 400%;
       animation: gradientBG 15s ease infinite;
       color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       text-align: center;
       padding: 0 20px;
     }
@@ -33,28 +29,38 @@
       100% { transform: scale(1); opacity: 1; }
     }
 
+    .section {
+      max-width: 800px;
+      margin: 80px auto;
+    }
+
     .hero {
-      max-width: 680px;
-      padding-top: 40px;
+      padding-top: 60px;
     }
 
     img.logo {
       width: 160px;
-      margin-bottom: -4px; /* Mais colado no nome */
+      margin-bottom: -4px;
       animation: pulse 4s ease-in-out infinite;
     }
 
     h2 {
       font-size: 40px;
       font-weight: 300;
-      margin: 0 0 10px;
+      margin-bottom: 10px;
     }
 
-    .subtitle {
+    h3 {
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .subtitle, .section p {
       font-size: 18px;
       line-height: 1.6;
-      margin: 0 auto 25px;
       max-width: 600px;
+      margin: 0 auto 25px;
     }
 
     .cta-button {
@@ -69,11 +75,37 @@
       font-size: 16px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .feature h4 {
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    .final-cta {
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
 
-<div class="hero">
+<div class="hero section">
   <img src="infinito_logo_perpetuall.png" alt="Logo Infinito" class="logo" />
   <h2>PerpetuALL</h2>
   <p class="subtitle">
@@ -82,6 +114,69 @@
     sua conexão e celebrar cada momento juntos.
   </p>
   <a href="#sobre" class="cta-button">Saiba mais</a>
+</div>
+
+<div id="sobre" class="section">
+  <h3>Sobre o PerpetuALL</h3>
+  <p>
+    O PerpetuALL é um aplicativo completo para casais que desejam evoluir juntos. Através de emoções diárias, missões de carinho, conquistas gamificadas e um diário compartilhado, o app transforma o amor em uma jornada divertida, profunda e recompensadora.
+  </p>
+</div>
+
+<div class="section">
+  <h3>Funcionalidades Principais</h3>
+  <div class="features-grid">
+    <div class="feature">
+      ❤️ <h4>Emoção do Dia</h4>
+      <p>Registre e compartilhe como se sente com seu par todos os dias.</p>
+    </div>
+    <div class="feature">
+      💌 <h4>Linguagem do Amor</h4>
+      <p>Descubra e respeite o jeito único do outro amar.</p>
+    </div>
+    <div class="feature">
+      🗓️ <h4>Calendário Emocional</h4>
+      <p>Visualize emoções ao longo do tempo e entenda os ciclos do casal.</p>
+    </div>
+    <div class="feature">
+      📔 <h4>Diário de Casal</h4>
+      <p>Registre momentos marcantes, reflexões e lembranças.</p>
+    </div>
+    <div class="feature">
+      🎯 <h4>Tarefas de Carinho</h4>
+      <p>Missões diárias que aproximam e recompensam.</p>
+    </div>
+    <div class="feature">
+      🏆 <h4>Metas e Conquistas</h4>
+      <p>Desafios que geram evolução real e desbloqueiam recompensas.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Gamificação e PLC</h3>
+  <p>
+    Cada interação gera pontos e fortalece laços. Esses pontos viram **PLC (PerpetuAll Coin)**, que podem ser trocados por recompensas no app e com parceiros. Evolua de “Iniciante” a “Perpetual” com níveis secretos baseados em experiências reais!
+  </p>
+</div>
+
+<div class="section">
+  <h3>Para Quem É?</h3>
+  <p>
+    Casais em qualquer fase: recém-apaixonados, parceiros de longa data ou reconectando-se após desafios. O PerpetuALL adapta-se a cada história de amor.
+  </p>
+</div>
+
+<div class="section">
+  <h3>Parcerias e Benefícios</h3>
+  <p>
+    A moeda PLC pode ser usada em motéis, restaurantes, lojas de presentes, cinemas, spas e experiências para o casal. Mais que um app, o PerpetuALL cria um ecossistema de amor, conexão e diversão.
+  </p>
+</div>
+
+<div class="section">
+  <p class="final-cta">Pronto para fortalecer seus laços?</p>
+  <a href="#" class="cta-button">Baixe agora e experimente!</a>
 </div>
 
 </body>
